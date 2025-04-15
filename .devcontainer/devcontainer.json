@@ -11,7 +11,10 @@
 			"extensions": [
 				"ms-vscode.cpptools",
 				"espressif.esp-idf-extension",
-				"Wokwi.wokwi-vscode"
+				"Wokwi.wokwi-vscode",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cmake-tools",
+				"codeium.codeium"
 			],
 			"settings": {
 				"terminal.integrated.defaultProfile.linux": "bash",
