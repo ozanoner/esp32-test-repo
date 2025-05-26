@@ -28,3 +28,7 @@ The project is already set up for debugging. To debug the project, first start W
 The debugger is configured to use TCP port 3333. If this port is already in use on your computer, you can change it in the `.vscode/launch.json` file (`miDebuggerServerAddress`) and in `wokwi.toml` (`gdbServerPort`).
 
 Note that the debugger setup requires the ESP-IDF extension to be installed in VS Code. If you don't have the ESP-IDF extension, you can manually set `miDebuggerServerAddress` in `.vscode/launch.json` to point to your local installation of the `xtensa-esp32-elf-gdb` debugger (it's usually installed in the esp tools directory, under `tools/xtensa-esp-elf-gdb/<version>/xtensa-esp-elf-gdb/bin`).
+
+## Continuous Integration
+
+GitHub Actions build this project, run `clang-tidy` checks, and verify the simulation in Wokwi. These automated checks help catch code issues before changes are merged.

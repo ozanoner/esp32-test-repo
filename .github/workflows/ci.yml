@@ -20,6 +20,13 @@ jobs:
           esp_idf_version: v5.4.1
           target: esp32
           path: '.'
+      - name: clang-tidy
+        uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: v5.4.1
+          target: esp32
+          path: '.'
+          command: idf.py clang-check
       - name: Test with Wokwi
         uses: wokwi/wokwi-ci-action@v1
         with:
