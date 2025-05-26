@@ -2,6 +2,17 @@
 
 Shows how to connect to the Wokwi-GUEST WiFi using the ESP-IDF framework.
 
+## Overview
+
+This repository contains a minimal ESP-IDF project that demonstrates how to
+connect an ESP32 device to a WiFi network (the default network is
+`Wokwi-GUEST`). The project is ready to run in the [Wokwi](https://wokwi.com)
+simulator and includes configuration for debugging with the ESP-IDF VS Code
+extension. The main application logic is implemented in
+[`main/main.c`](main/main.c), where the code configures the WiFi connection,
+blinks a status LED, waits for an IP address, and prints the acquired network
+information.
+
 ## Building
 
 We recommend using the [ESP-IDF VSCode extension](https://marketplace.visualstudio.com/items?itemName=espressif.esp-idf-extension) to build the project. Alternatively, you can use the command line: `idf.py build`.
